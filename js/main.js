@@ -14,7 +14,7 @@ alert("Année de naissance :" + " " +(user.annee-user.age));
 
 
 var autorisation= {
-  pays: ["France", "Espagne", "Italie", "Belgique"],
+  pays: ["FRANCE", "ESPAGNE", "ITALIE", "BELGIQUE"],
   paiment: ["visa", "mastercard", "paypal"],
   ageMin: 18,
 }
@@ -29,3 +29,10 @@ else {
 }
 }
 auto()
+
+function verifPays(t) {
+  if (autorisation.pays.indexOf("France") === -1) {
+alert("Vous résidez dans les pays autorisés à commander chez nous")
+  }
+}
+verifPays()
