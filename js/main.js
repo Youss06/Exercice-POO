@@ -14,5 +14,5 @@ alert(user.année-user.age);
 
 
 var autorisation= {
-  
+  pays: ["France", "Espagne", "Italie", "Belgique"],
 }
