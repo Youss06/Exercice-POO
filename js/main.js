@@ -46,3 +46,13 @@ alert("Vos moyens de paiment sont autorisé sur notre site")
   }
 }
 verifCard()
+
+
+
+
+function guerrier("nom", attack, défense, santé){
+  this.nom= nom;
+  this.attack= attack;
+  this.défense= défense;
+  this.santé= santé;
+}
