@@ -3,14 +3,14 @@ var user= {
   lastName: "Gray",
   contry: "France",
   age: 43,
-  année: "2017",
+  annee: 2017,
   payment: ["visa", "mastercard"],
 }
-alert(user.firstName);
-alert(user.lastName);
-alert(user.contry);
-alert(user.age);
-alert(user.année-user.age);
+alert("Prénom :" + " " + user.firstName);
+alert("Nom :" + " " +user.lastName);
+alert("Pays de résidence :" + " " +user.contry);
+alert("Age :" + " " +user.age + " " + "ans");
+alert("Année de naissance :" + " " +(user.annee-user.age));
 
 
 var autorisation= {
@@ -18,3 +18,14 @@ var autorisation= {
   paiment: ["visa", "mastercard", "paypal"],
   ageMin: 18,
 }
+
+function auto(x) {
+
+if (user.age > autorisation.ageMin) {
+alert("Bienvenu sur notre site")
+}
+else {
+  alert("Désolé vous n'avez pas l'âge réquis")
+}
+}
+auto()
