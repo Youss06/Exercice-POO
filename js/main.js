@@ -1,14 +1,14 @@
 var user= {
   firstName: "Paul",
   lastName: "Gray",
-  contry: "Turquie",
+  country: "France",
   age: 43,
   annee: 2017,
   payment: ["visa", "mastercard"],
 }
 alert("Prénom :" + " " + user.firstName);
 alert("Nom :" + " " +user.lastName);
-alert("Pays de résidence :" + " " +user.contry);
+alert("Pays de résidence :" + " " +user.country.toUpperCase());
 alert("Age :" + " " +user.age + " " + "ans");
 alert("Année de naissance :" + " " +(user.annee-user.age));
 
@@ -31,7 +31,7 @@ else {
 auto()
 
 function verifPays(t) {
-  if (autorisation.pays.indexOf("Turquie") === -1) {
+  if (autorisation.pays.indexOf("FRANCE") !== -1) {
 alert("Vous résidez dans les pays autorisés à commander chez nous")
   }
 else {
@@ -39,3 +39,10 @@ else {
 }
 }
 verifPays()
+
+function verifCard(a) {
+  if (autorisation.paiment.indexOf("visa", "mastercard") !== -1) {
+alert("Vos moyens de paiment sont autorisé sur notre site")
+  }
+}
+verifCard()
