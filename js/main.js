@@ -1,7 +1,7 @@
 var user= {
   firstName: "Paul",
   lastName: "Gray",
-  contry: "France",
+  contry: "Turquie",
   age: 43,
   annee: 2017,
   payment: ["visa", "mastercard"],
@@ -31,8 +31,11 @@ else {
 auto()
 
 function verifPays(t) {
-  if (autorisation.pays.indexOf("France") === -1) {
+  if (autorisation.pays.indexOf("Turquie") === -1) {
 alert("Vous résidez dans les pays autorisés à commander chez nous")
   }
+else {
+  alert("Désolé vous ne résidez pas dans la liste des pays autorisés à commander chez nous !")
+}
 }
 verifPays()
