@@ -11,3 +11,8 @@ alert(user.lastName);
 alert(user.contry);
 alert(user.age);
 alert(user.année-user.age);
+
+
+var autorisation= {
+  
+}
