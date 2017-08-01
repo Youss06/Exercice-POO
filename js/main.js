@@ -1,3 +1,9 @@
+
+// *****************************************
+// EXERCICE 1
+// ****************************************
+
+
 var user= {
   firstName: "Paul",
   lastName: "Gray",
@@ -50,9 +56,25 @@ verifCard()
 
 
 
-function guerrier("nom", attack, défense, santé){
-  this.nom= nom;
-  this.attack= attack;
-  this.défense= défense;
-  this.santé= santé;
-}
+
+
+// *************************************************************************
+// TENTATIVE DU JEU DE COMBAT, MAIS LE CONSOLE.LOG NE S''AFFICHE PAS
+// ***********************************************************************
+
+// function guerrier(nom, attack, défense, santé){
+//   this.nom= nom;
+//   this.attack= attack;
+//   this.défense= défense;
+//   this.santé= santé;
+//
+//   this.fightGuerrier = function(X){
+//     X.santé-=this.attack;
+//   };
+// }
+//
+// var fighter1= new Fighter("Ryu", 12, 7, 9);
+// var fighter2= new Fighter("Ken", 9, 10, 5);
+//
+// fighter1.fightGuerrier(fighter2);
+// console.log(fighter2.santé);
