@@ -62,19 +62,42 @@ verifCard()
 // TENTATIVE DU JEU DE COMBAT, MAIS LE CONSOLE.LOG NE S''AFFICHE PAS
 // ***********************************************************************
 
-// function guerrier(nom, attack, défense, santé){
-//   this.nom= nom;
-//   this.attack= attack;
-//   this.défense= défense;
-//   this.santé= santé;
-//
-//   this.fightGuerrier = function(X){
-//     X.santé-=this.attack;
-//   };
-// }
-//
-// var fighter1= new Fighter("Ryu", 12, 7, 9);
-// var fighter2= new Fighter("Ken", 9, 10, 5);
-//
-// fighter1.fightGuerrier(fighter2);
-// console.log(fighter2.santé);
+function guerrier(nom, attack, défense, santé){
+  this.nom= nom;
+  this.attack= attack;
+  this.défense= défense;
+  this.santé= santé;
+
+  this.fightGuerrier = function(X){
+    this.santé-=X.attack;
+    console.log(fighter2.santé);
+
+  };
+}
+
+var fighter1= new guerrier("Ryu", 12, 7, 100);
+var fighter2= new guerrier("Ken", 9, 10, 100);
+
+fighter1.fightGuerrier(fighter2);
+fighter2.fightGuerrier(fighter1);
+
+
+function guerrier(nom, attack, défense, santé, mana){
+  this.nom= nom;
+  this.attack= attack;
+  this.défense= défense;
+  this.santé= santé;
+  this.mana=mana;
+}
+
+
+
+
+
+
+
+function formualire() {
+    var x = document.getElementById("myTitle").value;
+    document.getElementById("titre").innerHTML = x;
+}
+formualire()
