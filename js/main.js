@@ -108,6 +108,15 @@ fighter2.fightGuerrier(merlin);
 magicien.soin();
 
 
+
+// *****************************************
+// EXERCICE 3
+// ****************************************
+
+
+
+
+
 function infoProduit (titre , phrase , description){
 
     this.titre = titre;
@@ -130,4 +139,4 @@ function formulaire() {
     document.getElementById("myTitle").value = " ";
     document.getElementById("phscatch").value = " ";
     document.getElementById("description").value = " ";
-}
+};
