@@ -125,15 +125,22 @@ function infoProduit (titre , phrase , description){
 
   }
 
+
+  var titre = new infoProduit("titre");
+
+  var phrase = new infoProduit("phrase");
+
+  var description = new infoProduit("description");
+
 function formulaire() {
-    var a = document.getElementById("myTitle").value;
-    document.getElementById("titre").innerHTML = a;
+    this.titre = document.getElementById("myTitle").value;
+    document.getElementById("titre").innerHTML = this.titre;
 
-    var b = document.getElementById("phscatch").value;
-    document.getElementById("phrase").innerHTML = b;
+    this.phrase = document.getElementById("phscatch").value;
+    document.getElementById("phrase").innerHTML = this.phrase;
 
-    var c = document.getElementById("description").value;
-    document.getElementById("descrip").innerHTML = c;
+    this.description = document.getElementById("description").value;
+    document.getElementById("descrip").innerHTML =  this.description;
 
 // var d = " ";
     document.getElementById("myTitle").value = " ";
